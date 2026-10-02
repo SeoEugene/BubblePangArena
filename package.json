@@ -1,0 +1,9 @@
+{
+  "name": "bubblepang-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "독창적인 캐릭터 8종과 함께하는 서버 판정 방식의 물풍선 대전",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": { "start": "node server.ts", "dev": "node --watch server.ts", "test": "node --test tests/*.test.ts" }
+}

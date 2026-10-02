@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1423"><title>버블팡 아레나 · 함께 터뜨리는 즐거움</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/style.css"></head>
+<body>
+ <header class="topbar"><a class="brand" href="/" aria-label="버블팡 아레나 홈"><img src="/favicon.svg" alt=""><span>버블팡 <b>아레나</b><small>BUBBLEPANG ARENA</small></span></a><div class="top-actions"><span id="connection" class="connection">연결 중</span><button class="icon-btn" id="helpButton" aria-label="게임 방법">?</button><button class="icon-btn" id="settingsButton" aria-label="소리 설정">♫</button></div></header>
+ <main id="app"><div class="loading">물풍선을 준비하고 있어요…</div></main>
+ <footer><span>작은 물풍선, 커다란 한 판.</span><span>최대 8인 · 무료 플레이 · 회원가입 없이</span></footer>
+ <div id="toast" role="status" aria-live="polite"></div>
+ <dialog id="settings"><button class="dialog-close" data-close aria-label="닫기">×</button><span class="eyebrow">SOUND & PLAY</span><h2>나만의 플레이 설정</h2><label class="slider-label">배경음악 <input id="musicVolume" type="range" min="0" max="100" value="25"></label><label class="slider-label">효과음 <input id="sfxVolume" type="range" min="0" max="100" value="55"></label><label class="check-label"><input id="muted" type="checkbox"> 모든 소리 끄기</label><p class="muted">경기는 설정 화면을 열어도 계속 진행돼요.</p><button class="button primary full" data-close>계속하기</button></dialog>
+ <dialog id="help"><button class="dialog-close" data-close aria-label="닫기">×</button><span class="eyebrow">HOW TO PLAY</span><h2>물풍선으로 길을 만들어요</h2><div class="help-row"><kbd>W A S D</kbd><span>또는 방향키로 이동</span></div><div class="help-row"><kbd>SPACE</kbd><span>물풍선 설치 · 2.5초 뒤 팡!</span></div><div class="help-row"><kbd>E</kbd><span>바늘이 있다면 물방울에서 탈출</span></div><p>물줄기는 상하좌우로 퍼지고, 물풍선끼리 만나면 연쇄 폭발해요. 단단한 벽 뒤로 피하세요!</p><p>물방울에 갇히면 5초 안에 탈출해야 해요. 팀원은 닿아서 구해주고, 상대가 닿으면 탈락해요.</p><p class="muted">개인전은 마지막 1명, 팀전은 마지막 팀이 승리해요. 3분이 지나거나 마지막 생존자들이 함께 탈락하면 무승부예요.</p><button class="button primary full" data-close>준비됐어요!</button></dialog>
+ <script type="module" src="/app.js"></script>
+</body></html>
